@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浦和矯正歯科クリニック | 浦和駅徒歩3分の矯正専門医院</title>
+    <meta name="description" content="さいたま市浦和区の矯正歯科専門クリニック。子どもの矯正から大人の目立たない矯正まで、認定医が誠実に対応します。浦和駅徒歩3分。初診相談予約受付中。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="#">
+                    <span class="header__logo-sub">さいたま市浦和区の矯正専門</span>
+                    <span class="header__logo-main">浦和矯正歯科クリニック</span>
+                </a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#concept">当院について</a></li>
+                    <li><a href="#menu">診療メニュー</a></li>
+                    <li><a href="#flow">初診の流れ</a></li>
+                    <li><a href="#doctor">医師紹介</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                </ul>
+                <a href="#reservation" class="header__cta-btn">初診相談予約</a>
+            </nav>
+            <button class="header__menu-btn" id="menuBtn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li><a href="#concept">当院について</a></li>
+                <li><a href="#menu">診療メニュー</a></li>
+                <li><a href="#flow">初診の流れ</a></li>
+                <li><a href="#doctor">医師紹介</a></li>
+                <li><a href="#access">アクセス</a></li>
+                <li><a href="#faq">よくある質問</a></li>
+            </ul>
+            <div class="mobile-menu__cta">
+                <a href="#reservation" class="btn btn--primary btn--full">24時間WEB予約</a>
+                <a href="tel:0000000000" class="btn btn--secondary btn--full">お電話でのお問い合わせ</a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__bg" id="heroBg">
+                <!-- Image will be inserted here -->
+            </div>
+            <div class="hero__content">
+                <p class="hero__catch">美しく揃った歯並びで、<br>もっと自信の持てる毎日へ。</p>
+                <p class="hero__sub">矯正専門医による、誠実で透明性の高い治療。<br>あなたに最適なプランをご提案します。</p>
+                <div class="hero__cta">
+                    <a href="#reservation" class="btn btn--accent btn--lg">
+                        初診相談を予約する
+                        <span class="btn__sub">24時間受付中</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Bar (Today's Info) -->
+        <div class="status-bar">
+            <div class="status-bar__inner">
+                <div class="status-bar__item">
+                    <span class="status-bar__label">本日の診療</span>
+                    <span class="status-bar__value">10:00 - 19:00</span>
+                </div>
+                <!-- Example condition: dynamic change via JS or static text -->
+                <div class="status-bar__item">
+                    <span class="status-bar__info">★本日は比較的ご予約が取りやすい状況です</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concept -->
+        <section id="concept" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__ja">当院の特徴</h2>
+                    <span class="section-title__en">Concept</span>
+                </div>
+                <div class="concept-grid">
+                    <div class="concept-item fade-in">
+                        <div class="concept-item__icon">🏥</div>
+                        <h3>矯正専門クリニック</h3>
+                        <p>専門的な知識と技術を持った医師が、責任を持って治療を担当します。一般的な歯科治療とは異なる、矯正ならではの視点で診断します。</p>
+                    </div>
+                    <div class="concept-item fade-in">
+                        <div class="concept-item__icon">🦷</div>
+                        <h3>なるべく抜かない治療</h3>
+                        <p>健康な歯をできるだけ残す「非抜歯矯正」を第一に検討します。しっかり噛める機能性と美しさの両立を目指します。</p>
+                    </div>
+                    <div class="concept-item fade-in">
+                        <div class="concept-item__icon">💎</div>
+                        <h3>目立たない装置</h3>
+                        <p>表側でも目立ちにくいホワイトワイヤーや、透明なマウスピース矯正、裏側矯正など、ライフスタイルに合わせた装置を選べます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flow (For First Timers) -->
+        <section id="flow" class="section section--bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__ja">初診の方へ</h2>
+                    <span class="section-title__en">First Visit</span>
+                </div>
+                <p class="section-desc">矯正治療は長いお付き合いになります。<br>まずは無料相談で、不安や疑問を解消することから始めましょう。</p>
+                
+                <div class="flow-steps">
+                    <div class="step fade-in">
+                        <div class="step__num">01</div>
+                        <h3 class="step__title">初診相談（約60分）</h3>
+                        <p class="step__desc">お口の中を拝見し、歯並びのお悩みやご希望をお伺いします。治療期間や費用の目安についても丁寧にご説明します。無理な勧誘はありません。</p>
+                    </div>
+                    <div class="step fade-in">
+                        <div class="step__num">02</div>
+                        <h3 class="step__title">精密検査</h3>
+                        <p class="step__desc">レントゲン撮影、口腔内スキャン、お顔の写真などを撮影し、現在の骨格や歯の状態を正確に分析します。</p>
+                    </div>
+                    <div class="step fade-in">
+                        <div class="step__num">03</div>
+                        <h3 class="step__title">診断・治療計画</h3>
+                        <p class="step__desc">検査結果に基づき、具体的な治療方針、使用する装置、明確な費用総額をご提示します。ご納得いただいてから治療開始となります。</p>
+                    </div>
+                </div>
+                <div class="u-center u-mt-lg">
+                    <a href="#reservation" class="btn btn--primary">まずは初診相談を予約する</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor -->
+        <section id="doctor" class="section">
+            <div class="container">
+                <div class="doctor-profile">
+                    <div class="doctor-profile__img fade-in">
+                        <div class="placeholder-img" style="background-color: #e0e0e0; width: 100%; height: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center; color: #888;">Doctor Image</div>
+                    </div>
+                    <div class="doctor-profile__info fade-in">
+                        <div class="section-title section-title--left">
+                            <h2 class="section-title__ja">院長挨拶</h2>
+                            <span class="section-title__en">Doctor</span>
+                        </div>
+                        <h3 class="doctor-name">院長 <span class="doctor-name--small">〇〇 〇〇</span></h3>
+                        <p class="doctor-msg">
+                            矯正治療は、単に歯を並べるだけではありません。<br>
+                            咬み合わせを整え、お顔のバランスを美しくし、<br>
+                            生涯にわたって自分の歯で美味しく食事ができる健康な生活をサポートするものです。<br><br>
+                            当院では、患者様一人ひとりのお悩みにとことん寄り添い、<br>
+                            「ここで治療してよかった」と思っていただける医療を提供します。<br>
+                            少しでも歯並びが気になる方は、どうぞお気軽にご相談ください。
+                        </p>
+                        <dl class="doctor-career">
+                            <dt>経歴</dt>
+                            <dd>
+                                〇〇大学歯学部 卒業<br>
+                                〇〇歯科大学歯科矯正学講座 入局<br>
+                                日本矯正歯科学会 認定医 取得<br>
+                                浦和矯正歯科クリニック 開院
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access -->
+        <section id="access" class="section section--bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__ja">アクセス・診療時間</h2>
+                    <span class="section-title__en">Access</span>
+                </div>
+                <div class="access-grid">
+                    <div class="access-info fade-in">
+                        <div class="access-details">
+                            <p class="access-address">
+                                〒330-0000<br>
+                                埼玉県さいたま市浦和区〇〇 1-2-3 △△ビル 2F
+                            </p>
+                            <p class="access-station">JR「浦和駅」西口より 徒歩3分</p>
+                            <ul class="access-list">
+                                <li>提携駐車場あり（ご利用の際は受付にお伝えください）</li>
+                                <li>バリアフリー対応（ベビーカーもそのまま入れます）</li>
+                            </ul>
+                        </div>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10:00 - 13:00</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>×</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>▲</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>
+                                    <td>14:30 - 19:00</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>×</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>▲</td>
+                                    <td>×</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="schedule-note">▲：土曜は17:00まで<br>休診日：水曜・日曜・祝日</p>
+                    </div>
+                    <div class="access-map fade-in">
+                        <!-- Google Map Placeholder -->
+                        <div class="map-placeholder">
+                            Google Map Area
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="section-title__ja">よくあるご質問</h2>
+                    <span class="section-title__en">Q&A</span>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item fade-in">
+                        <summary class="faq-item__question">初診相談ではどのようなことをしますか？</summary>
+                        <div class="faq-item__answer">
+                            <p>お口の中を拝見し、現在の歯並びの問題点や、どのような治療方法が適しているか、費用の概算などをご説明します。所要時間は約60分です。痛みや無理な勧誘はありませんのでご安心ください。</p>
+                        </div>
+                    </details>
+                    <details class="faq-item fade-in">
+                        <summary class="faq-item__question">大人の矯正は何歳まで可能ですか？</summary>
+                        <div class="faq-item__answer">
+                            <p>年齢制限はありません。歯と歯茎が健康であれば、60代、70代から始められる方もいらっしゃいます。まずはご相談ください。</p>
+                        </div>
+                    </details>
+                    <details class="faq-item fade-in">
+                        <summary class="faq-item__question">治療費の分割払いはできますか？</summary>
+                        <div class="faq-item__answer">
+                            <p>はい、可能です。当院では無金利の院内分割（最大24回）や、デンタルローンの取り扱いがございます。生活スタイルに合わせて無理のない支払い計画をご提案します。</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <h2>浦和矯正歯科クリニック</h2>
+                        <p>〒330-0000 埼玉県さいたま市浦和区〇〇 1-2-3</p>
+                        <p>TEL: 00-0000-0000</p>
+                    </div>
+                    <ul class="footer__links">
+                        <li><a href="#top">ホーム</a></li>
+                        <li><a href="#concept">特徴</a></li>
+                        <li><a href="#menu">診療メニュー</a></li>
+                        <li><a href="#flow">初診の流れ</a></li>
+                        <li><a href="#doctor">医師紹介</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <p class="footer__copyright">&copy; Urawa Orthodontic Clinic. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Floating CTA (Mobile Only) -->
+    <div class="floating-cta">
+        <a href="tel:0000000000" class="floating-cta__btn floating-cta__btn--tel">
+            <span class="icon">📞</span> 電話予約
+        </a>
+        <a href="#reservation" class="floating-cta__btn floating-cta__btn--web">
+            <span class="icon">📅</span> 24時間WEB予約
+        </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリニックサイトリニューアルまとめ | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Script to auto-scale iframes to fit the card width
+        window.addEventListener('load', () => {
+            const wrappers = document.querySelectorAll('.preview-iframe-wrapper');
+            
+            const handleResize = () => {
+                wrappers.forEach(wrapper => {
+                    const iframe = wrapper.querySelector('iframe');
+                    if(iframe) {
+                        const containerWidth = wrapper.clientWidth;
+                        // Target mobile width is 375px
+                        const scale = Math.min(containerWidth / 375, 1); 
+                        // We strictly want to simulate mobile, so we scale it down.
+                        // If card is wider than 375 (unlikely in grid), we cap at 1 or let it grow?
+                        // Let's fix iframe at 375px width and scale it to fit container.
+                        
+                        iframe.style.transform = `scale(${scale})`;
+                        // Adjust height of wrapper to match scaled height if needed, 
+                        // but we rely on CSS aspect ratio for the card container mostly.
+                    }
+                });
+            };
+
+            // Initial call
+            handleResize();
+            
+            // Re-calculate on resize
+            window.addEventListener('resize', handleResize);
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>クリニックサイトリニューアルまとめ</h1>
+        <p>制作実績・プレビュー一覧</p>
+    </header>
+
+    <div class="container">
+        <div class="portfolio-grid">
+            
+            <!-- Project 1 -->
+            <a href="./どい歯科医院/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./どい歯科医院/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">どい歯科医院</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="./はとり歯科クリニック/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./はとり歯科クリニック/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">はとり歯科クリニック</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="./みなみ台歯科/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./みなみ台歯科/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">みなみ台歯科</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="./デンタルクリニック・ヒロ/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./デンタルクリニック・ヒロ/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">デンタルクリニック・ヒロ</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="./中垣歯科医院/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./中垣歯科医院/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">中垣歯科医院</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="./志田歯科医院/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./志田歯科医院/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">志田歯科医院</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+            <!-- Project 7 -->
+            <a href="./志賀歯科クリニック/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./志賀歯科クリニック/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">志賀歯科クリニック</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+            <!-- Project 8 -->
+            <a href="./浦和矯正歯科クリニック/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./浦和矯正歯科クリニック/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">浦和矯正歯科クリニック</h2>
+                    <span class="card-badge">矯正歯科</span>
+                </div>
+            </a>
+
+            <!-- Project 9 -->
+            <a href="./浦和矯正歯科クリニック ブログ/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./浦和矯正歯科クリニック ブログ/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">浦和矯正歯科クリニック ブログ</h2>
+                    <span class="card-badge">ブログ・その他</span>
+                </div>
+            </a>
+
+            <!-- Project 10 -->
+            <a href="./遠藤歯科クリニック/index.html" class="project-card" target="_blank">
+                <div class="card-preview">
+                    <div class="preview-iframe-wrapper">
+                        <iframe src="./遠藤歯科クリニック/index.html" class="mobile-frame" loading="lazy" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <h2 class="card-title">遠藤歯科クリニック</h2>
+                    <span class="card-badge">歯科・クリニック</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>

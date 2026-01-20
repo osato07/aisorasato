@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>どい歯科医院 | 城陽市・宇治市の優しい歯科・歯医者</title>
+    <meta name="description" content="城陽市・宇治市の「どい歯科医院」。痛みの少ない治療、丁寧な説明、徹底した衛生管理で、地域の皆様の笑顔を守ります。Web予約受付中。駐車場完備。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="header-logo">
+                <a href="#">どい歯科医院</a>
+            </h1>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li><a href="#about">医院紹介</a></li>
+                    <li><a href="#menu">診療メニュー</a></li>
+                    <li><a href="#doctor">医師紹介</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                </ul>
+                <div class="header-cta">
+                    <a href="tel:0774-XX-XXXX" class="btn btn-secondary btn-sm phone-link">📞 <span class="phone-number">0774-XX-XXXX</span></a>
+                    <a href="#" class="btn btn-primary btn-sm">WEB予約</a>
+                </div>
+            </nav>
+            <button class="hamburger-menu" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="#about">医院紹介</a></li>
+                <li><a href="#menu">診療メニュー</a></li>
+                <li><a href="#doctor">医師紹介</a></li>
+                <li><a href="#access">アクセス</a></li>
+                <li><a href="#faq">よくある質問</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div> <!-- Placeholder for AI Image -->
+            <div class="hero-content">
+                <p class="hero-sub">城陽市・宇治市の皆様の笑顔を守る</p>
+                <h2 class="hero-title">「安心」と「対話」を大切にする<br>身近な歯科医院</h2>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary btn-lg">WEB予約はこちら</a>
+                    <a href="tel:0774-XX-XXXX" class="btn btn-secondary btn-lg">電話で予約</a>
+                </div>
+                <div class="hero-status">
+                    <p class="today-status">本日の診療：<span id="open-status">確認中...</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- First Visit Flow (Anxiety Reduction) -->
+        <section class="section first-visit" id="first-visit">
+            <div class="container container-sm">
+                <div class="section-header">
+                    <h2 class="section-title">初診の方へ</h2>
+                    <p class="section-desc">初めての方も安心してご来院ください</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">01</div>
+                        <h3 class="step-title">ご予約</h3>
+                        <p class="step-desc">お電話またはWEB予約から、ご都合の良い日時をお選びください。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">02</div>
+                        <h3 class="step-title">ご来院</h3>
+                        <p class="step-desc">受付で保険証をご提示ください。問診票のご記入をお願いします。</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">03</div>
+                        <h3 class="step-title">カウンセリング</h3>
+                        <p class="step-desc">お悩みをお聞きし、お一人お一人に合った治療計画をご提案します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <section class="section menu" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">診療内容</h2>
+                    <p class="section-desc">患者様に寄り添った幅広い診療を行っています</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-icon">🦷</div>
+                        <h3 class="menu-title">一般歯科</h3>
+                        <p class="menu-text">虫歯の治療、根管治療など。痛みに配慮した丁寧な治療を行います。</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-icon">🛡️</div>
+                        <h3 class="menu-title">歯周病治療</h3>
+                        <p class="menu-text">歯を失う原因となる歯周病の予防・治療に力を入れています。</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-icon">✨</div>
+                        <h3 class="menu-title">審美歯科</h3>
+                        <p class="menu-text">ホワイトニングやセラミック治療で、自然で美しい口元へ。</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-icon">👶</div>
+                        <h3 class="menu-title">小児歯科</h3>
+                        <p class="menu-text">お子様のペースに合わせ、歯医者さん嫌いにさせない診療を。</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-icon">👴</div>
+                        <h3 class="menu-title">入れ歯</h3>
+                        <p class="menu-text">しっかり噛める、痛くない入れ歯の製作・調整を行います。</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-icon">🥊</div>
+                        <h3 class="menu-title">マウスガード</h3>
+                        <p class="menu-text">スポーツ用のオーダーメイドマウスガードの製作も可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature / Doctor -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="section-title text-left">地域の皆様との<br>対話を大切に</h2>
+                        <p class="about-text">
+                            どい歯科医院では、患者様のお話をしっかりとお聞きし、納得していただいた上で治療を進めることを一番大切にしています。<br><br>
+                            「痛くない」「怖くない」治療を心がけ、お子様からご高齢の方まで、安心して通っていただける歯科医院を目指しています。<br>
+                            お口のお悩みは、どんな小さなことでもお気軽にご相談ください。
+                        </p>
+                        <div class="about-features">
+                            <span>✅ 丁寧なカウンセリング</span>
+                            <span>✅ 徹底した衛生管理</span>
+                            <span>✅ 痛みの少ない治療</span>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <!-- Placeholder for Treatment/Doctor Image -->
+                        <div class="img-placeholder">院内・医師イメージ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access -->
+        <section class="section access" id="access">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">アクセス・診療時間</h2>
+                </div>
+                <div class="access-wrapper">
+                    <div class="access-info">
+                        <div class="access-map">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.6!2d135.779686!3d34.865158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600110dd0ffb7d6d%3A0x98b80ec5dcfe7600!2sDoi%20Dental%20Clinic!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="access-details">
+                            <p class="address">京都府城陽市・宇治市エリア<br>（詳細な住所が入ります）</p>
+                            <p class="parking">🅿️ 駐車場あり</p>
+                        </div>
+                    </div>
+                    <div class="hours-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日・祝</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>09:00 - 13:00</th>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>
+                                    <th>15:00 - 19:30</th>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>●</td>
+                                    <td>×</td>
+                                    <td>●</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="hours-note">※木曜午後は休診、土曜午後は〜17:00まで（要確認）<br>※受付は終了30分前まで</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq" id="faq">
+            <div class="container container-sm">
+                 <div class="section-header">
+                    <h2 class="section-title">よくある質問</h2>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-q">予約は必要ですか？</summary>
+                        <div class="faq-a">
+                            <p>当院は予約優先制となっております。事前にお電話またはWEB予約をいただくとスムーズにご案内可能です。急患の方はまずお電話ください。</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-q">駐車場はありますか？</summary>
+                        <div class="faq-a">
+                            <p>はい、当院敷地内に専用駐車場をご用意しております。お車でも安心してご来院ください。</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-q">子供連れでも大丈夫ですか？</summary>
+                        <div class="faq-a">
+                            <p>もちろんです。小児歯科も行っておりますので、お子様とご一緒に安心してご来院ください。</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">どい歯科医院</div>
+                <div class="footer-links">
+                    <a href="#about">医院紹介</a>
+                    <a href="#menu">診療メニュー</a>
+                    <a href="#access">アクセス</a>
+                    <a href="#privacy">プライバシーポリシー</a>
+                </div>
+                <small class="copyright">&copy; 2026 Doi Dental Clinic. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed CTA for Mobile -->
+    <div class="fixed-cta">
+        <a href="tel:0774-XX-XXXX" class="fixed-cta-btn btn-tel">
+            <span>📞 電話予約</span>
+        </a>
+        <a href="#" class="fixed-cta-btn btn-web">
+            <span>📅 WEB予約</span>
+        </a>
+    </div>
+
+</body>
+</html>
