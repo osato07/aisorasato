@@ -1,14 +1,19 @@
 /* ==========================================================================
    Variables
    ========================================================================== */
-   :root {
+:root {
     /* Colors */
-    --color-primary: #005B96;    /* Dark Blue - Reliability */
+    --color-primary: #005B96;
+    /* Dark Blue - Reliability */
     --color-primary-light: #4A90C7;
-    --color-secondary: #F2F7FA;  /* Very Light Blue - Background */
-    --color-accent: #E8A87C;     /* Warm Beige/Orange - Warmth, Skin-friendly */
-    --color-text: #333333;       /* Dark Gray - Body text */
-    --color-text-light: #767676; /* Light Gray - Sub text */
+    --color-secondary: #F2F7FA;
+    /* Very Light Blue - Background */
+    --color-accent: #E8A87C;
+    /* Warm Beige/Orange - Warmth, Skin-friendly */
+    --color-text: #333333;
+    /* Dark Gray - Body text */
+    --color-text-light: #767676;
+    /* Light Gray - Sub text */
     --color-white: #FFFFFF;
     --color-border: #E5E5E5;
 
@@ -25,7 +30,7 @@
     /* Interface */
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
-    --border-radius-lg: 30px;
+    --border-radius-lg: 8px;
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
     --transition: all 0.3s ease;
@@ -34,7 +39,9 @@
 /* ==========================================================================
    Base
    ========================================================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -87,8 +94,13 @@ ul {
     background-color: var(--color-secondary);
 }
 
-.u-center { text-align: center; }
-.u-mt-lg { margin-top: var(--spacing-lg); }
+.u-center {
+    text-align: center;
+}
+
+.u-mt-lg {
+    margin-top: var(--spacing-lg);
+}
 
 /* Animation Utils */
 .fade-in {
@@ -137,11 +149,13 @@ ul {
     padding: 16px 40px;
     min-width: 240px;
 }
+
 .btn--accent:hover {
     opacity: 0.9;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
+
 .btn__sub {
     font-size: 0.8rem;
     font-weight: 500;
@@ -291,9 +305,17 @@ ul {
     transition: all 0.3s;
 }
 
-.header__menu-btn span:nth-child(1) { top: 14px; }
-.header__menu-btn span:nth-child(2) { top: 21px; }
-.header__menu-btn span:nth-child(3) { top: 28px; }
+.header__menu-btn span:nth-child(1) {
+    top: 14px;
+}
+
+.header__menu-btn span:nth-child(2) {
+    top: 21px;
+}
+
+.header__menu-btn span:nth-child(3) {
+    top: 28px;
+}
 
 /* Mobile Menu */
 .mobile-menu {
@@ -338,6 +360,7 @@ ul {
 .btn--full {
     width: 100%;
 }
+
 .btn--secondary {
     background-color: var(--color-secondary);
     color: var(--color-primary);
@@ -362,7 +385,8 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f0f4f8; /* Placeholder */
+    background-color: #f0f4f8;
+    /* Placeholder */
     z-index: -1;
 }
 
@@ -373,7 +397,8 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4); /* Overlay */
+    background: rgba(255, 255, 255, 0.4);
+    /* Overlay */
 }
 
 .hero__content {
@@ -558,7 +583,8 @@ ul {
     background: var(--color-white);
 }
 
-.schedule-table th, .schedule-table td {
+.schedule-table th,
+.schedule-table td {
     border: 1px solid var(--color-border);
     padding: 8px;
     text-align: center;
@@ -599,7 +625,8 @@ ul {
     font-weight: 700;
     cursor: pointer;
     position: relative;
-    list-style: none; /* Hide default triangle */
+    list-style: none;
+    /* Hide default triangle */
 }
 
 .faq-item__question::after {
@@ -624,7 +651,8 @@ details[open] .faq-item__question::after {
     background: #333;
     color: #fff;
     padding-top: var(--spacing-lg);
-    padding-bottom: 80px; /* Space for floating CTA */
+    padding-bottom: 80px;
+    /* Space for floating CTA */
 }
 
 .footer__inner {
@@ -665,7 +693,7 @@ details[open] .faq-item__question::after {
     width: 100%;
     background: var(--color-white);
     display: flex;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
     height: 70px;
 }
@@ -692,24 +720,62 @@ details[open] .faq-item__question::after {
 
 /* Responsive */
 @media (min-width: 769px) {
-    .header__menu-btn { display: none; }
-    .mobile-menu { display: none; }
-    .floating-cta { display: none; } /* Hide on desktop */
-    .footer { padding-bottom: var(--spacing-lg); }
+    .header__menu-btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .floating-cta {
+        display: none;
+    }
+
+    /* Hide on desktop */
+    .footer {
+        padding-bottom: var(--spacing-lg);
+    }
 }
 
 @media (max-width: 768px) {
-    .header__nav { display: none; }
-    .header__menu-btn { display: block; }
-    
-    .hero__catch { font-size: 1.5rem; }
-    
-    .flow-steps { grid-template-columns: 1fr; }
-    .doctor-profile { flex-direction: column; }
-    .doctor-profile__img { max-width: 100%; width: 100%; height: 250px; }
-    .access-grid { grid-template-columns: 1fr; }
-    
-    .status-bar__inner { flex-direction: column; gap: 4px; text-align: center;}
-    
-    .section-title__ja { font-size: 1.5rem; }
+    .header__nav {
+        display: none;
+    }
+
+    .header__menu-btn {
+        display: block;
+    }
+
+    .hero__catch {
+        font-size: 1.5rem;
+    }
+
+    .flow-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-profile {
+        flex-direction: column;
+    }
+
+    .doctor-profile__img {
+        max-width: 100%;
+        width: 100%;
+        height: 250px;
+    }
+
+    .access-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .status-bar__inner {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+    }
+
+    .section-title__ja {
+        font-size: 1.5rem;
+    }
 }

@@ -1,8 +1,11 @@
 :root {
   /* Color Palette - Medical/Trust/Calm */
-  --color-primary: #004d80; /* Deep Navy Blue - Trust */
-  --color-secondary: #00796b; /* Teal - Calmness/Health */
-  --color-accent: #f57c00; /* Muted Orange - CTA */
+  --color-primary: #004d80;
+  /* Deep Navy Blue - Trust */
+  --color-secondary: #00796b;
+  /* Teal - Calmness/Health */
+  --color-accent: #f57c00;
+  /* Muted Orange - CTA */
   --color-text-main: #333333;
   --color-text-light: #666666;
   --color-bg-body: #f9f9f9;
@@ -24,8 +27,8 @@
   /* Border Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
-  --radius-lg: 16px;
-  --radius-full: 9999px;
+  --radius-lg: 8px;
+  --radius-full: 4px;
 
   /* Transitions */
   --transition-fast: 0.2s ease;

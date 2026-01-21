@@ -25,7 +25,7 @@
 
     /* Border Radius */
     --radius-md: 8px;
-    --radius-lg: 16px;
+    --radius-lg: 8px;
 
     /* Transitions */
     --transition-fast: 0.2s ease;
@@ -76,7 +76,7 @@ img {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    border-radius: var(--radius-md);
+    border-radius: 4px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
@@ -160,7 +160,7 @@ nav {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('../assets/images/hero_bg.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url('../assets/images/hero_new.png');
     background-size: cover;
     background-position: center;
     display: flex;

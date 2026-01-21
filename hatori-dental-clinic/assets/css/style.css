@@ -402,7 +402,7 @@ h4 {
     background-color: #666;
     /* Fallback */
     /* background-image set in HTML/JS later or use default */
-    background: linear-gradient(rgba(15, 46, 70, 0.4), rgba(15, 46, 70, 0.6)), url('../img/hero_bg.png') center/cover no-repeat;
+    background: linear-gradient(rgba(15, 46, 70, 0.4), rgba(15, 46, 70, 0.6)), url('../img/hero_new.png') center/cover no-repeat;
     z-index: -1;
 }
 
@@ -442,7 +442,7 @@ h4 {
     color: white;
     font-size: 0.8rem;
     padding: 4px 10px;
-    border-radius: 99px;
+    border-radius: 4px;
     margin-right: 10px;
     vertical-align: middle;
 }
